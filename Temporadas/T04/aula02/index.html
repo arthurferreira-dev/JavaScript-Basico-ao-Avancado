@@ -1,0 +1,22 @@
+<html>
+    <script>
+        // var scoped
+
+        var x = 1
+        console.log("x", x)
+        console.log("y", y) // Essa variavel não foi definida antes
+
+        {
+            console.log("x", x) // <= 'desse'
+            x = 2 // depende a ordem, se ele vim antes 'desse' ele deixa o scopo e depois do scopo com 2
+            var y = 10 // já essa foi
+        }
+
+        console.log("x", x)
+        console.log("y", y)
+
+        // scopo são estruturas por {}
+
+        // plmdss usa nome melhor pra variável do que 'x, y, z'!
+    </script>
+</html>
