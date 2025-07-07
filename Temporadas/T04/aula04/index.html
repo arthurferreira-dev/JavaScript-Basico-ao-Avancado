@@ -1,0 +1,20 @@
+<html>
+    <script>
+        // const scoped
+
+        const x = 10
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            //x = 20 | output: Uncaught TypeError: invalid assignment to const 'x'
+
+            const y = 30
+        }
+
+        console.log("x", x)
+        console.log("y", y) // output: Uncaught ReferenceError: y is not defined
+
+        // não é possível criar uma const como undefined!
+    </script>
+</html>
