@@ -1,0 +1,18 @@
+<html>
+    <script>
+        // let scoped
+
+        let x = 10
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            x = 20
+
+            let y = 30
+        }
+
+        console.log("x", x)
+        console.log("y", y) // output: Uncaught ReferenceError: y is not defined
+    </script>
+</html>
