@@ -1,0 +1,25 @@
+<html lang="pt-br">
+    <script>
+        // Object
+        // uma const array ou object pode ter valor mudado
+
+        const person = {
+            name: 'Arthur',
+            age: 12,
+            address: {
+                street: 'Avenida Geral',
+                city: 'Manaus', // city mudou de valor
+                state: 'Amazonas'
+            }
+        }
+
+        person.address.city = 'Curitiba'
+        person.skin = 'Branco'
+
+        console.log(`Seu nome é ${JSON.stringify(person.name)}`)
+        console.log(`Sua idade é ${JSON.stringify(person.age)}`)
+        console.log(`O endereço da sua rua é ${JSON.stringify(person.address.street)}`)
+        console.log(`Ele mora em ${JSON.stringify(person.address.city)} do Estado de ${JSON.stringify(person.address.state)}`)
+        console.log(`Sua cor de pele é ${JSON.stringify(person.skin)}`)
+    </script>
+</html>
