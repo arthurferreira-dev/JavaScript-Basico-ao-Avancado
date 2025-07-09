@@ -1,0 +1,29 @@
+<html lang="pt-br">
+    <script>
+        let name, age
+
+        name = 'Arthur'
+        age = 12
+        address = { // O JS não mostra naturalmente o object em string
+            street: 'Rua Paulista',
+            city: 'São Paulo'
+        }
+
+        console.log('nome', name)
+        console.log('idade', age)
+
+        // Concatenação
+
+        //'A' + 'B' = 'AB'
+        // 'A ' + 'B' = 'A B'
+
+        console.log('Concatenação:', name + ' tem ' + age + ' anos.')
+
+        // Interpolação
+
+        // use `` e ${}.
+        // O ${} é que nem usar um JS
+
+        console.log('Interpolação:', `${name} tem ${age+1} anos. Ele mora em ${JSON.stringify(address)}`)
+    </script>
+</html>
