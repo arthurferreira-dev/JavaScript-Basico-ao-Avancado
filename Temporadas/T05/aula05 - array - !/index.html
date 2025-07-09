@@ -1,0 +1,20 @@
+<html lang="pt-br">
+    <script>
+        // Array = variavel + indice(começa com 0)
+
+        //const pessoa1 = 'Arthur'
+        //const pessoa2 = 'Pedro'
+        //const pessoa3 = 'Theo'
+
+        const persons = ['Arthur', 'Pedro', 'Theo', { nome: 'Zé' }] // tem como colocar object dentro da array
+        persons[4] = 'Alfredo' // Não seria uma boa prática, criaria um furo na array
+        persons[1] = 'Pedro Henrique'
+
+        //console.log(pessoa1)
+        //console.log(pessoa2)
+        //console.log(pessoa3)
+
+        console.log(`Convidados da Festa: \n ${persons[0]} \n ${persons[1]} \n ${persons[2]} \n ${JSON.stringify(persons[3])}`)
+        console.log(`A array tem ${persons.length} itens`)
+    </script>
+</html>
