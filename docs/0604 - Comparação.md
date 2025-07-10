@@ -3,11 +3,12 @@
 Servem para comparar dois valores e/ou variáveis.
 
 - Igual - `==`
+- Exatemente Igual = `===`
 - Diferente - `!=`
 - Menor - `<`
-- Menor igual - `<=`
+- Menor ou igual - `<=`
 - Maior - `>`
-- Maior igual - `>=`
+- Maior ou igual - `>=`
 
 Uma comparação sempre retornará verdadeiro ou falso:
 
