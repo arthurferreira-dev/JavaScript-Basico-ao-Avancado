@@ -1,0 +1,29 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        console.log('||') // Se tiver um true toda a espressão é true
+        console.log(false || false)
+        console.log(false || true)
+        console.log(true || false)
+        console.log(true || true)
+
+        console.log('&&') // Se tiver um false toda a espressão é false
+        console.log(false && false)
+        console.log(false && true)
+        console.log(true && false)
+        console.log(true && true)
+
+        console.log('Misto')
+        console.log((false || true) && true)
+        console.log((true && true) || false)
+        console.log(((false || true) && true) || false)
+        console.log((true && false) || (false || false))
+        console.log(23 < 24 && 'A' == "A") // output: true
+
+        console.log('!') // Inverte a espressão
+        console.log(!false) // output: true
+        console.log(!true) // output: false
+    </script>
+</html>
