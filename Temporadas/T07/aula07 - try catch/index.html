@@ -1,0 +1,25 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // O IF dos erros
+        try { // seu IF
+            // executa algo...
+            // consulta de api, banco de dados, etc
+            console.log('Chamando o Banco de Dados...')
+            //con.select('clientes')
+            throw 'Error 404 ao conectar no Banco de Dados'
+        } catch (error) { // seu ELSE IF ou ELSE
+            // erro
+            alert('Error de execução. Genérico')
+            console.error(error)
+            console.log('ERROR EXECUÇÃO')
+        } finally { // Mostra a finalização do try catch | seu ELSE
+            // sempre executa o final (opcional)
+            console.log('Execução Final')
+        }
+
+        // Nunca coloque um catch vazio
+    </script>
+</html>
