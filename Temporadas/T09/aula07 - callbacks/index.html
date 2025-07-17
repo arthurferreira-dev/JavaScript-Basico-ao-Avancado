@@ -1,0 +1,24 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        function multi(values, func) { // call
+            for (let i = 0; i < values.length; i++) {
+                values[i] = func([values[i]]) // callback
+                //values[i] *= values[i]
+            }
+
+            return values
+        };
+
+        const values = [1, 4, 6, 6, 8, 2];
+        const func = (n) => n * n * n / n * n; // back
+
+        multi(values, func);
+
+        for (let f = 0; f < values.length; f++) {
+            console.log(`${f}`, multi(values[f], func));
+        }
+    </script>
+</html>
