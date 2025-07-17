@@ -1,0 +1,22 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        function mult(x) { // comportamento return padrão
+            return x *= x
+        }
+
+        function multObj(x) { // comportamento por referência
+            return x.value *= x.value
+        }
+
+        let n = 10
+        console.log('Variável:', mult(n))
+
+        console.log('Variável:', n)
+
+        const a = { value: 10 }
+
+        console.log('Objeto:', a.value)
+        console.log('Objetos:', multObj(a))
