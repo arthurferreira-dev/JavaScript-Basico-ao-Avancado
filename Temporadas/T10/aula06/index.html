@@ -1,0 +1,24 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // cuidado com o arredondamento
+        let valor = 567.65001
+
+        console.log(valor.toFixed(3))
+        console.log(Math.ceil(valor))
+        console.log(Math.floor(valor))
+        console.log(Math.round(valor))
+
+        let money = 1500
+        let language = 'pt-BR'
+        let currency = 'BRL'
+
+        function real(dindin) {
+            return new Intl.NumberFormat(`${language}`, { style: "currency", currency: `${currency}` }).format(dindin)
+        }
+
+        console.log(real(money))
+    </script>
+</html>
