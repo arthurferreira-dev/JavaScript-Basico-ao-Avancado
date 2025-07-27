@@ -1,0 +1,32 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // Filtração
+
+        const numbers = [15, 7, 8, 9, 0, 23, 77, 81, 10]
+
+        let x = numbers.filter((num) =>  num >= 20) // Arrow function com Filter
+
+        console.log(x)
+
+
+        const people = [
+            { name: 'Gabriel', gender: 'M' , age: 56 }, 
+            { name: 'Alfredo', gender: 'M' , age: 17 },
+            { name: 'Ana', gender: 'F' , age: 14 },
+            { name: 'Amanda', gender: 'F' , age: 27 },
+            { name: 'Garro', gender: 'M', age: 16 },
+            { name: 'Rodrigo', gender: 'M', age: 20 }
+        ]
+
+        let y = people.filter((peo) => peo.age >= 18)
+        let g = people.filter((pe) => pe.age >= 16 && pe.gender === 'M')
+        let velho = people.filter((p) => (p.age >= 18 && p.age <= 25) && p.gender === 'M')
+
+        console.log(y)
+        console.log(g)
+        console.log(velho)
+    </script>
+</html>
