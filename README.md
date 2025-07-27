@@ -42,7 +42,7 @@ Você irá aprender muuito mais sobre variáveis e um pouco de ``Object``, ``Arr
 * Formato ISOS no ``Date``
 
 ### [T06](Temporadas/T06/)
-Aqui vamos aprender sobre operações matemáticas e a ``shorthands`` dos variáveis e sobre **Operadores Lógicos**.
+Aqui vamos aprender sobre operações matemáticas e a ``shorthands`` das variáveis e sobre **Operadores Lógicos**.
 
 * Operadores Aritméticos e Ordem de Precedência
 * Atribuição (``shorthand``)
