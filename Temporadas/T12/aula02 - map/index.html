@@ -1,0 +1,35 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // Map (nunca altera)
+
+        const numbers = [16, 8, 123, 76, 34, 1, 9]
+
+        const double = numbers.map((n) => n * n)
+
+        console.log(numbers)
+        console.log(double)
+
+        const temp = [0, 32, 45, 67, 78, 88, 99, 120]
+
+        const celsius = temp.map((tem) => Math.round(((tem - 32) * 5) / 9))
+
+        console.log(temp)
+        console.log(celsius)
+
+        const peoples = [
+            { name: 'gabriel', gender: 'M' , age: 56 }, 
+            { name: 'Alfredo', gender: 'M' , age: 17 },
+            { name: 'anA', gender: 'F' , age: 14 },
+            { name: 'amAnda', gender: 'F' , age: 27 },
+            { name: 'gaRrO', gender: 'M', age: 16 },
+            { name: 'rodrigo', gender: 'M', age: 20 }
+        ]
+
+        let pip = peoples.map((peo) => peo.name.toUpperCase())
+
+        console.log(pip)
+    </script>
+</html>
