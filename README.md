@@ -18,7 +18,7 @@ Você vai aprender como é que funciona o **JavaScript**, oque é um escopo e so
 
 ### [T03](Temporadas/T03/)
 Aqui é um começo de uma caminhada do básico, você irá aprender:
-* ``typeof`` (indêntificador de tipos)`
+* ``typeof`` (indêntificador de tipos)
 * Formas de declarar uma ``String``
 * Casas decimais
 * ``Boolean`` (Verdadeiro ou Falso)

@@ -1,0 +1,31 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // Desestruturação
+
+        let set = [17, 13, 6, 8]
+        let [n1, n2] = set // n1 = 17, n2 = 13
+
+        console.log('n1', n1) // ele retorna um elemento nn uma string
+        console.log('n2', n2)
+
+        function Funcao() {
+            let x = 10
+            let y = 400
+            return [x, y]
+        }
+
+        /*
+        let Array = Funcao()
+        console.log(Array[0])
+        console.log(Array[1])
+        */
+       
+        let [x, y] = Funcao()
+
+        console.log('x', x)
+        console.log('y', y)
+    </script>
+</html>
