@@ -1,0 +1,28 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        let peoples = ['Joaquim', 'Maria', 'Zé', 'Jorge', 'Isabelle']
+
+        console.log(peoples[2]) // fatia especifíca
+        console.log(peoples[peoples.length-1]) // último elemento
+        console.log(peoples.slice(2, 4)) // retornando fatias específicas
+        peoples.push('Raimundo') // adicionar no fim
+        console.log(peoples[peoples.length-1])
+        peoples.unshift('Arthur') // adiciona no começo
+        console.log(peoples[peoples.length-peoples.length])
+        peoples.pop() // remove do fim do array e retorna o elemento removido (removi o raimundo)
+        peoples.shift() // remove do inicio do array e retorna o elemento removido (removi arthur)
+        console.log(peoples)
+        peoples.splice(1, 1) // remove fatias específicas (indice, 1+1=2)
+        console.log(peoples)
+
+        // localizando elementos
+
+        let index = peoples.indexOf('Zé')
+        peoples.splice(index, 1)
+
+        console.log(peoples)
+    </script>
+</html>
