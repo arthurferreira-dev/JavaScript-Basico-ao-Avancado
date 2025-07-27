@@ -1,0 +1,30 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // JSON - JavaScript Object Notation
+
+        const people = [
+            {
+                id: 1,
+                name: 'Arthur',
+                lastName: 'Ferreira',
+                bornDate: new Date(2012, 9, 14)
+            },
+
+            {
+                id: 2,
+                name: 'Rodrigo',
+                lastName: 'Pereira',
+                bornDate: new Date(1999, 7, 5)
+            }
+        ]
+
+        console.log(JSON.stringify(people)) // Conversão: object -> string / JSON
+
+        let str = JSON.stringify(people)
+        
+        console.log(JSON.parse(str)) // Conversão: string / JSON -> object
+    </script>
+</html>
