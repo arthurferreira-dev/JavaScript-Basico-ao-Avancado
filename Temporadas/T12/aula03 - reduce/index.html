@@ -1,0 +1,41 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        // reduce = array.reduce(callback, [initialValue])
+
+        let values = [1, 6, 731, 523, 66]
+
+        function callback(acumulator, currentValue, index, array) {
+            console.log('acumulator', acumulator)
+            console.log('currentValue', currentValue)
+            console.log('index', index)
+            console.log('array', array)
+
+            return acumulator + currentValue // map
+        }
+
+        values.reduce(callback, 0)
+
+        let sum = values.reduce((total, item) => total + item, 0) // 0 = inicia a redução zerado
+        console.log('sum:', sum)
+
+        let medium = values.reduce(
+            (total, item, index) => (total + item) / (index + 1), 0
+        )
+        console.log('Média:', medium)
+
+        let newValues = values.reduce((total, item) => {
+            if (item > 2) {
+                total.push(item)
+            }
+
+            console.log('item', item)
+
+            return total
+        }, []);
+
+        console.log('newValues', newValues)
+    </script>
+</html>
