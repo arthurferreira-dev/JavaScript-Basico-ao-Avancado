@@ -51,3 +51,46 @@ Aqui vamos aprender sobre operações matemáticas e a ``shorthands`` das variá
 * Como usar o operador de igualdade e o operador idêntico
 * Truthy e Falsy
 * Operadores Lógicos (``||``, ``&&`` e ``!``)
+
+### [T07](Temporadas/T07/)
+Nesta temporada você irá deixar seus programas um pouco mais inteligentes, com:
+
+* ``IF`` (SE)
+* ``ELSE`` (SE NÃO)
+* ``IF`` composto com ``ELSE IF``
+* ``Ternário`` (variável = (condição) ? IF : ELSE)
+* ``Switch``
+* ``IF`` dos Erros (``Try Catch``)
+
+### [T08](Temporadas/T08/)
+Vamos aprender mais sobre estruturas de repetição.
+
+* ``While`` (Primeira Estrutura de Repetição)
+* ``For``
+* ``For of``
+* ``For in``
+
+### [T09](Temporadas/T09/)
+Aprenda sobre funções nesta Temporada.
+* Como declarar e usar uma ``function``
+* Usando parâmetros na ``function``
+* Colocando multíplos parâmetros com ``arguments``
+* Diferença entre ``comportamento padrão`` e ``comportamento de referência``
+* Dúvidas sobre usar a ``function`` antes ou depois da chamada
+* ``Arrow function``
+* ``Callbacks``
+
+### [T10](Temporadas/T10/)
+Aqui você irá aprender sobre conversões de tipos.
+* ``Type Casting`` e ``Type Coersion``
+* Conversão de ``String`` pra ``Number`` e vice-versa
+* Conversão com ``Boolean``, ``String`` e ``Number``
+* Conversão de ``Date`` para ``Formato ISO``
+* ``Split()`` e ``Join()``
+* Formato do Dinheiro com ``Intl``
+* Dígitos (valores)
+* Quebra e junção de frases
+* ``Uppercase`` e ``Lowercase``
+* Localizar Carácteres específicos com ``includes``
+* Trocar Carácteres com ``replace``
+* Conversão de ``JSON``
