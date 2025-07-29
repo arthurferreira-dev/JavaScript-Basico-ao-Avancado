@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+    <img src="user-pixabay.png" width="200">
+    <h1 id="person-name">Seu nome</h1>
+    <h2 class="text">Programador JavaScript</h2>
+    <p class="text">
+        Conhecimento em programação Front-End
+    </p>
+    <p>
+        Para mais detalhes. por favor, visite meu <a href="https://github.com/arthurferreira-dev/">Github</a> ou <a href="https://google.com">Qualquer site</a>
+    </p>
+    <script>
+        let name = document.querySelector('#person-name');
+        name.innerHTML = 'Arthur Ferreira da Costa'
+        name.style.color = 'purple'
+        name.style.fontFamily = 'Arial, sans-serif'
+
+        // Criando elementos com DOM
+        const subTitle = document.createElement('h2');
+        subTitle.innerHTML = 'Projetos'
+        document.body.append(subTitle) // adiciona no body
+
+        const list = document.createElement('ol');
+        list.style.listStyleType = 'disc'
+        const item = document.createElement('li');
+        item.innerHTML = 'algum'
+
+        document.body.append(list)
+        list.append(item)
+
+        for (let y = 0; y <= 30; y++) {
+            item.innerHTML = `GG ${y}`
+        }
+    </script>
+</body>
+</html>
