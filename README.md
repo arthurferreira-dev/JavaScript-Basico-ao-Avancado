@@ -94,3 +94,15 @@ Aqui você irá aprender sobre conversões de tipos.
 * Localizar Carácteres específicos com ``includes``
 * Trocar Carácteres com ``replace``
 * Conversão de ``JSON``
+
+### [T11](Temporadas/T11/)
+Você irá aprender aqui:
+* Como modificar uma ``Array`` de forma eficiente
+* Concatenação entre elementos como, ``Àrray``, ``Object``, etc
+* Desestruturação
+
+### [T12](Temporadas/T12/)
+Aqui você começa a avançar muuito para o **Avançado de JavaScript**. Todos os assuntos não alteram os elementos originais!
+* ``Filter``
+* ``Map``
+* ``Reduce`` (``Filter`` + ``Map``)
