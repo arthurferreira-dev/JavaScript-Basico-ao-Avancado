@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Teclas</title>
+</head>
+<body>
+    <input type="text" />
+    <script>
+        let inputTXT = document.querySelector('input[type=text]');
+        inputTXT.addEventListener('keydown', (event) => {
+            console.log(event)
+            if (event.keyCode === 13) {
+                alert(`Tecla \'ENTER\' capturada - ${inputTXT.value}`)
+            }
+        }) // uma tecla para baixo (pressionada)
+
+        //inputTXT.addEventListener('keyup', (event) => console.log('keyup')) // uma tecla depois de ser pressionada
+    </script>
+</body>
+</html>
