@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+    <img src="user-pixabay.png" width="200">
+    <h1 id="person-name">Seu nome</h1>
+    <h2 class="text">Programador JavaScript</h2>
+    <p class="text">
+        Conhecimento em programação Front-End
+    </p>
+    <p>
+        Para mais detalhes. por favor, visite meu <a href="https://github.com/arthurferreira-dev/">Github</a> ou <a href="https://google.com">Qualquer site</a>
+    </p>
+    <script>
+        // Recuparando e alterando elementos com o DOM
+        let name = document.querySelector('#person-name') // recupero o h1
+        name.innerHTML = 'Arthur Ferreira da Costa' // atribuo um valor no h1
+        name.style.color = 'purple'
+        name.style.fontFamily = 'Arial, sans-serif'
+        // doc mdn: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
+    </script>
+</body>
+</html>
