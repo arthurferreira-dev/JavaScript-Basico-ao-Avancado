@@ -98,7 +98,7 @@ Aqui você irá aprender sobre conversões de tipos.
 ### [T11](Temporadas/T11/)
 Você irá aprender aqui:
 * Como modificar uma ``Array`` de forma eficiente
-* Concatenação entre elementos como, ``Àrray``, ``Object``, etc
+* Concatenação entre elementos como, ``Array``, ``Object``, etc
 * Desestruturação
 
 ### [T12](Temporadas/T12/)
