@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de formulário</title>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="get">
+        <label for="q">* Busca</label>
+        <input type="text" name="q" />
+        <input type="submit" value="Pesquisar"> <!--o submit é o tipo-->
+    </form>
+    <script>
+        let formu = document.querySelector('form');
+        const validate = (event) => { // o submit é um evento
+            let queryText = event.target.querySelector('input[name=q]').value
+
+            if (!queryText) {
+                event.preventDefault();
+                let erro400 = '[400 Bad Request]: Preencha o campo de busca!'
+                alert(erro400)
+                console.error(erro400)
+            }
+        };
+
+        formu.addEventListener('submit', validate);
+    </script>
+</body>
+</html>
