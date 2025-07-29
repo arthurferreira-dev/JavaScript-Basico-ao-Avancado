@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando página com JS</title>
+</head>
+<body>
+    <script>
+        const load = () => {
+            const ti = document.querySelector('#title')
+            const desc = document.querySelector('.text')
+            console.log(ti, desc)
+        }
+
+        document.addEventListener('DOMContentLoaded', load);
+    </script>
+
+    <h1 id="title">Minha página</h1>
+    <p class="text">
+        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Autem ab placeat similique praesentium? Iure impedit nesciunt illum qui? Tempora nulla autem vitae iure alias suscipit rerum ducimus commodi id libero.
+    </p>
+</body>
+</html>
