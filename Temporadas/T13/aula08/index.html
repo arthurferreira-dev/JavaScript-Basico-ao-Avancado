@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Clique</title>
+</head>
+<body>
+    <button>Clique em mim!</button>
+    <a href="https://github.com/arthurferreira-dev/JavaScript-Basico-ao-Avancado">Clique em mim</a>
+    <script>
+        let btn = document.querySelector('button');
+        let link = document.querySelector('a');
+
+        btn.addEventListener('click', () => console.log('Clicou no Botão'))
+        link.addEventListener('click', (event) => {
+            event.preventDefault() // ele retira o comportamento padrão
+            console.log('Clicou no HyperLink')
+        })
+    </script>
+</body>
+</html>
