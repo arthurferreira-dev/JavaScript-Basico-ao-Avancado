@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Classe CSS</title>
+    <style>
+        .titulo {
+            color: purple;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+            background-color: purple;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título da Página</h1>
+    <button>Alterando a Classe</button>
+    <script>
+        let title = document.querySelector('h1');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', () => { // Verificação de Classe
+            /*
+            if (btn.classList.contains('btn') && title.classList.contains('titulo')) {
+                btn.classList.remove('btn')
+                btn.innerHTML = 'Alterando a Classe'
+                title.classList.remove('titulo')
+            } else {
+                btn.classList.add('btn')
+                btn.innerHTML = 'Você adicionou uma Classe CSS via JavaScript!'
+                title.classList.add('titulo')
+            }
+            */
+           
+            btn.classList.toggle('btn')
+            title.classList.toggle('titulo')
+        })
+    </script>
+</body>
+</html>
