@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do Estilo CSS</title>
+</head>
+<body>
+    <h1>Título da Página</h1>
+    <button>Alterar cor</button>
+    <script>
+        let title = document.querySelector('h1');
+        let btn = document.querySelector('button');
+
+        const btnFunc = () => {
+            btn.style.background = 'purple'
+            btn.style.webkitBorderRadius = '5px' // BorderRadius = border-radius
+            btn.style.color = '#fff'
+            btn.style.border = 'none'
+            btn.style.padding = '4px'
+        }
+
+        title.style.color = 'purple' // == title.style = 'color: purple'
+        title.style.fontFamily = 'Arial, sans-serif'
+        btn.addEventListener('click', btnFunc);
+    </script>
+</body>
+</html>
