@@ -106,3 +106,12 @@ Aqui você começa a avançar muuito para o **Avançado de JavaScript**. Todos o
 * ``Filter``
 * ``Map``
 * ``Reduce`` (``Filter`` + ``Map``)
+
+### [T13](Temporadas/T13/)
+Falta pouco pra terminar o **Avançado de JavaScript**!
+* Manipulação do HTML & CSS com o ``DOM``
+* Criando elementos sem usar HTML
+* Eventos ``DOM``
+* Localizando elementos HTML com ``document`` (``DOM``)
+* ``preventDefault()``
+* ``DOMContentLoaded()``
