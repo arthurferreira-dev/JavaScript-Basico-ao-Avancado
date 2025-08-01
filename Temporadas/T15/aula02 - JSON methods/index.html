@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON methods</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: 'Arthur Ferreira',
+            age: 13,
+            address: {
+                street: 'Rua do Governador',
+                numberHouse: 13,
+                complementHouse: 2,
+                district: 'Norte',
+                city: 'Guarujá',
+                state: 'São Paulo',
+                uf: 'SP'
+            }
+        }
+
+        const personSTR = JSON.stringify(person) // transforma em STRING
+
+        console.log(typeof personSTR, personSTR)
+
+        const personOBJ = JSON.parse(personSTR) // transforma em OBJECT
+
+        console.log(typeof personOBJ, personOBJ)
+
+        console.log(personOBJ == person) // ele reside na memória
+    </script>
+</body>
+</html>

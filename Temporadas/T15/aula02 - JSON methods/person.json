@@ -1,0 +1,13 @@
+{
+    "name": "Arthur Ferreira",
+    "age": 13,
+    "address": {
+        "street": "Rua do Governador",
+        "numberHouse": 13,
+        "complementHouse": 2,
+        "district": "Norte",
+        "city": "Guarujá",
+        "state": "São Paulo",
+        "uf": "SP"
+    }
+}
