@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise.all</title>
+</head>
+<body>
+    <button>Executar Promise</button>
+    <script>
+        let btn = document.querySelector('button');
+
+        function Ambiente() {
+            console.log('sync started')
+            const pro = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('Promise finished')
+                    resolve(1)
+                }, 1000);
+            });
+
+            const pro2 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('Promise2 finished')
+                    resolve(2)
+                }, 2000)
+            });
+
+            const pro3 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('Promise3 finished')
+                    reject(3)
+                }, 3000)
+            });
+
+            /*
+            pro.then(() => {
+                pro2.then(() => {
+                    pro3.then(() => {
+                    console.log('pro finished')
+                    })
+                })
+            });
+            */
+
+            Promise.all([pro, pro2, pro3]).then((values) => {
+                console.log(`promise values: ${values}`)
+            }).catch((values) => {
+                console.error(`promise error: ${values}`)
+            })
+
+            console.log('sync finished')
+        }
+
+        btn.addEventListener('click', Ambiente);
+    </script>
+</body>
+</html>
