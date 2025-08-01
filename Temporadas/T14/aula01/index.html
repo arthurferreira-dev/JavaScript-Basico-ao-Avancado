@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <button>Executar</button>
+    <script>
+    /*
+        Promise é um objeto usado para processamento assícrona. Uma Promise (de "promessa") representa um valor que pode estar disponível agora, no futuro ou nunca.
+
+        Uma Promise está em um destes estados:
+        pending (pendente)
+        fullfilled (realizado)
+        rejected (rejeitado)
+    */
+
+    let btn = document.querySelector('button');
+    let cont = 0
+    
+    function Valuer() {
+        for (let y = cont; y <= 10; y++) {
+            return y
+        }
+    }
+
+    function AmbientePromise() {
+        console.log('async started')
+        setTimeout(() => console.log('promise loading...'), 1000)
+        setTimeout(() => {
+            for (let y = 0; y <= 10; y++) {
+                let x = (y*100) * 3
+                setTimeout(() => console.log(`promise parte ${y}`), x);
+            }
+        }, 2000) 
+        setTimeout(() => console.log('async finished'), 5500);
+    }
+
+    btn.addEventListener('click', AmbientePromise)
+
+    /*
+    function testPromise() {
+        console.log('async loading...')
+        const promises = ++cont
+        new Promise((resolve, reject) => {
+            setTimeout(() => console.log('promise loading parte1'), 1500)
+            setTimeout(() => console.log('promise loading parte2'), 2000)
+            setTimeout(() => {
+                console.log('promise loading parte3')
+                setTimeout(() => resolve(), 100)
+            }, 3000)
+           setTimeout(() => {
+            if (promises % 2 === 0) {
+                resolve(promises)
+            } else {
+                reject(promises)
+            }
+           }, 3000)
+           console.log('async finished')
+        }).then((value) => {
+            console.log(`async loading finished, ${value}`)
+        }).catch(() => {
+            console.error('async error')
+        })
+    }
+    */
+
+    //btn.addEventListener('click', testPromise);
+    </script>
+</body>
+</html>
